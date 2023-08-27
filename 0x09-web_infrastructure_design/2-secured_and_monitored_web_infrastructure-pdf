@@ -1,0 +1,34 @@
+On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com,
+it must be secured, serve encrypted traffic, and be monitored.
+
+### Specifics
+---------------------------------------------------------------------------
+On the structure in task 2 add;
+* 3 firewalls
+* 1 SSL certificate to serve www.foobar.com over HTTPS
+* 3 monitoring clients (data collector for Sumologic or other monitoring services)
+
+The explain the concept behind;
+- For every additional element, why you are adding it
+- What are firewalls for
+- Why is the traffic served over HTTPS
+- What monitoring is used for
+- How the monitoring tool is collecting data
+- Explain what to do if you want to monitor your web server QPS
+- Why terminating SSL at the load balancer level is an issue
+- Why having only one MySQL server capable of accepting writes is an issue
+- Why having servers with all the same components (database, web server and application server) might be a problem.
+
+### Elaboration
+----------------------------------------------------------------------
+- The addition of three firewalls helps in filtering the network traffic in and out of a machine.
+- Setting up of HTTPS prevents reading if someone intercepts the traffic without permission.
+- Monitoring can be done to check if there is an alert about anything unusual. Its composed of a client
+collecting  data and sending it to the monitoring system.
+- it's configured to collect webserver data. It has an alert triggered if QPS is getting out of control.
+- Termination of SSL at the Load-balancer level, brings an issue since the traffic between it and the web servers is unencrypted.
+- One MySQL server capable of accepting writes is an issue because if the master goes down, the app can't write to the database anymore.
+- The server with all the same component might affect the other components on it when there is maintenance is done on a server
+for a specif component.
+This can as well make their consumption not to grow the same way between each of them.
+- The load-balancer is a SPOF in this case. 

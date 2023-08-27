@@ -1,0 +1,35 @@
+On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
+
+### Specifics
+-------------------------------------------------------------------------------
+From the first task, add;
+a) 2 servers
+b) 1 web server (Nginx)
+c) 1 application server
+d) 1 load-balancer (HAproxy)
+e) 1 set of application files (your code base)
+f) 1 database (MySQL)
+
+Then explain;
+~ For every additional element, why you are adding it
+~ What distribution algorithm your load balancer is configured with and how it works
+~ Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+~ How a database Primary-Replica (Master-Slave) cluster works
+~ What is the difference between the Primary node and the Replica node in regard to the application
+~ Where are SPOF
+~ Security issues (no firewall, no HTTPS)
+~ No monitoring
+
+### Elaboration
+-----------------------------------------------------------------------------------------
+- In this task, the server should contain a web server, app server, database 
+and codebase to provide redundancy with other servers .
+- The load balancer and the SPOF distributes traffic between the added servers in an 
+Active-active and Active-passive setup.
+- MySQL Master-Replica cluster used replication to keep the data synchronized(harmonize or integrate).
+- Master database node can accept read/writes while Replica only accepts reads.
+- There's no firewall on the servers as well as unencrypted traffic which might lead to failure if a new code
+is deployed.
+- Lack of a monitoring unit  means there won't be an alert if something is unusual ie though
+overloaded CPU, disk, memory or network.
+

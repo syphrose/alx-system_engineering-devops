@@ -1,0 +1,20 @@
+Scaling up
+---------------------------------------------------------------------------------
+- NGINX - is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.
+- In a typical deployment, a website that provides both static and dynamically generated content runs
+web servers for the static content and application servers to generate content dynamically.
+- A reverse proxy and load balancer sit in front of one or more web servers and one or more web application
+servers to route traffic to the appropriate server, first based on the type of content requested and then based
+on the configured load-balancing algorithm.
+- Most load balancer programs are also reverse proxy servers, which simplifies web application server architecture.
+
+In this task you must add;
+- 1 server
+- 1 load-balancer (HAproxy) configured as cluster with the other one
+- Split components (web server, application server, database) with their own server
+
+### Explanations
+----------------------------------------------------------------------
+The additional server.
+With additional load-balancer configured as a cluster so that if one fails the one takes over.
+The added server contains single components inside them ie (web server, app server or database)
