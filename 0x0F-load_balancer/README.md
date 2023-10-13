@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 TTHE LOAD BALANCER
+=======
+THE LOAD BALANCER
+>>>>>>> df8fa9f3c78ec9486f5a06351204e44ee4665186
 
 In this task we're to look at the concept of:
 Loadbalancer
@@ -28,4 +32,8 @@ A README.md file, at the root of the folder of the project, is mandatory
 All your Bash script files must be executable
 Your Bash script must pass Shellcheck (version 0.3.7) without any error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
+<<<<<<< HEAD
 The second line of all your Bash scripts should be a comment explaining what is the script doing.   
+=======
+The second line of all your Bash scripts should be a comment explaining what is the script doing
+>>>>>>> df8fa9f3c78ec9486f5a06351204e44ee4665186

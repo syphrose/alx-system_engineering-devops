@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 REQUIREMENTS
 	Allowed editors: vi, vim, emacs
+=======
+        Allowed editors: vi, vim, emacs
+>>>>>>> df8fa9f3c78ec9486f5a06351204e44ee4665186
 All your files will be interpreted on Ubuntu 20.04 LTS
 All your files should end with a new line
 A README.md file at the root of the folder of the project is mandatory
