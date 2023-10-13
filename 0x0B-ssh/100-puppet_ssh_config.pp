@@ -8,4 +8,6 @@ line => 'PasswordAuthentication no'
 file_line{'declare identity file':
 path => '/etc/ssh/ssh_config',
 line => 'IdentifyFile ~/.ssh/school'
+
+
 }
