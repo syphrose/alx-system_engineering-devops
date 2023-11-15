@@ -1,5 +1,4 @@
 ### WEB STACK DEBUGGING -V4
-! [logo] (https://www.istockphoto.com/photo/searching-for-bugs-in-code-or-technology-3d-render-gm1399193279-453123886)
 ----------------------------------------------------------------------------
 ### Project Description
 --------------------------------------------------------------------
