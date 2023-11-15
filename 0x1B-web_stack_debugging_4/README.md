@@ -1,6 +1,5 @@
 ### WEB STACK DEBUGGING -V4
--------------------------------------------------------------------------------
-! [logo] (https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/313/frdkCrb.jpg)
+! [logo] (https://www.istockphoto.com/photo/searching-for-bugs-in-code-or-technology-3d-render-gm1399193279-453123886)
 ----------------------------------------------------------------------------
 ### Project Description
 --------------------------------------------------------------------
